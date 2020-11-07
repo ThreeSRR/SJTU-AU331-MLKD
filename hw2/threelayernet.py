@@ -106,7 +106,7 @@ class ThreeLayerNet(object):
             self.params['b2'] -= learning_rate * db2
 
         # Check accuracy
-        y_pred = self.predict(X)
+        _, y_pred = self.predict(X)
         y_true = y
         
         count = 0
@@ -132,7 +132,7 @@ class ThreeLayerNet(object):
         num_test = X.shape[0]
 
         # Check accuracy
-        y_pred = self.predict(X)
+        output, y_pred = self.predict(X)
         y_true = y
         
         count = 0
@@ -140,7 +140,7 @@ class ThreeLayerNet(object):
             if all(y_pred[i] == y_true[i]):
                 count += 1
         test_acc = count / num_test
-        loss = self.MSELoss(y_pred, y_true) / num_test
+        loss = self.MSELoss(output, y_true) / num_test
 
         return {
           'loss': loss,
@@ -171,4 +171,4 @@ class ThreeLayerNet(object):
         for i in range(y_pred.shape[0]):
             pred[i][int(y_pred[i])] = 1
 
-        return pred
+        return z2, pred
