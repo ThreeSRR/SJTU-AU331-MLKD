@@ -1,7 +1,5 @@
 # Homework1
 
-518030910397 史睿
-
 
 
 ## Structure
@@ -14,6 +12,6 @@
 	* [`Iris.ipynb`](Iris.ipynb): 对数几率回归在iris数据集上与线性分类器、NB和SVM做性能比较
 	* [`watermelon.ipynb`](watermelon.ipynb): 对数几率回归在西瓜3.0数据集上与线性分类器、NB和SVM做性能比较
 * [`AU331-HW1.pdf`](AU331-HW1.pdf): 理论题答案以及实践题分析
-* [`AU331-MLKD-HW1.pdf`](AU331-MLKD-HW1.pdf): 第一次作业
+* [`AU331-MLKD-HW1.pdf`](AU331-MLKD-HW1.pdf): 第一次作业题目
 * [`iris.data`](iris.data): dataset of iris
 * [`watermelon.csv`](watermelon.csv): dataset of watermelon3.0
